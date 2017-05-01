@@ -1,0 +1,32 @@
+{
+  "name": "bit-docs-process-less",
+  "version": "0.0.1",
+  "description": "Process content in less files",
+  "main": "bit-docs.js",
+  "scripts": {
+    "jshint": "jshint *.js --config",
+    "test": "npm run jshint && mocha --reporter spec",
+    "preversion": "npm test",
+    "postversion": "git push --tags && git push",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bit-docs/bit-docs-process-less.git"
+  },
+  "keywords": [
+    "bit-docs"
+  ],
+  "author": "Bitovi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bit-docs/bit-docs-process-less/issues"
+  },
+  "homepage": "https://github.com/bit-docs/bit-docs-process-less#readme",
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0"
+  }
+}
