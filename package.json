@@ -1,6 +1,6 @@
 {
   "name": "bit-docs-process-less",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Process content in less files",
   "main": "bit-docs.js",
   "scripts": {
